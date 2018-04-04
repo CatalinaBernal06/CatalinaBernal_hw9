@@ -10,3 +10,6 @@ times_python.csv: CatalinaBernal_GenerarTiempos.py
 times_cpp.csv: CatalinaBernal_GenerarTiempos.cpp
 	c++ CatalinaBernal_GenerarTiempos.cpp -o tiempo
 	./tiempo > times_cpp.csv
+	
+clean:
+	rm *.x *.csv *.png
